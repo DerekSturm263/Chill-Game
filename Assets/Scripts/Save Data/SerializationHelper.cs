@@ -4,15 +4,9 @@ using UnityEngine;
 
 public static class SerializationHelper
 {
-    private const string SaveDataPath = "SaveData";
+    private const string SaveDataPath = "";
 
-    private static readonly byte[] Key =
-    {
-        0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08,
-        0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16
-    };
-
-    public static void Save<T>(T value, string fileName)
+    public static void Save<T>(T value, string fileName, byte[] key)
     {
         string path = CreateDirectory(fileName);
         string json = JsonUtility.ToJson(value, true);
@@ -21,7 +15,7 @@ public static class SerializationHelper
         using FileStream stream = new(path, writeMode);
 
         using Aes aes = Aes.Create();
-        aes.Key = Key;
+        aes.Key = key;
 
         byte[] iv = aes.IV;
         stream.Write(iv, 0, iv.Length);
@@ -32,16 +26,16 @@ public static class SerializationHelper
         writer.Write(json);
         writer.Flush();
 
-        Debug.Log($"{nameof(T)} has been successfully saved as: {json}");
+        Debug.Log($"{typeof(T).Name} has been successfully saved to {path} as: {json}");
     }
 
-    public static T Load<T>(T defaultValue, string fileName)
+    public static T Load<T>(T defaultValue, string fileName, byte[] key)
     {
         string path = CreateDirectory(fileName);
 
         if (!File.Exists(path))
         {
-            Debug.Log($"{nameof(T)} could not be found. Loading the default: {JsonUtility.ToJson(defaultValue)}");
+            Debug.Log($"{path} could not be found. Loading the default {typeof(T).Name}: {JsonUtility.ToJson(defaultValue, true)}");
             return JsonUtility.FromJson<T>(JsonUtility.ToJson(defaultValue));
         }
 
@@ -62,11 +56,11 @@ public static class SerializationHelper
             numBytesToRead -= n;
         }
 
-        using CryptoStream crypto = new(stream, aes.CreateDecryptor(Key, iv), CryptoStreamMode.Read);
+        using CryptoStream crypto = new(stream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
         using StreamReader reader = new(crypto);
 
         string json = reader.ReadToEnd();
-        Debug.Log($"{nameof(T)} has been successfully loaded as: {json}");
+        Debug.Log($"{typeof(T).Name} has been successfully loaded from {path} as: {json}");
 
         return JsonUtility.FromJson<T>(json);
     }

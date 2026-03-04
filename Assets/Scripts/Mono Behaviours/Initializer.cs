@@ -3,11 +3,11 @@ using UnityEngine;
 
 public class Initializer : SingletonBehaviour<Initializer>
 {
-    [SerializeField] private SingletonBehaviourBase[] _behaviours;
+    [SerializeField] private SingletonScriptableObject[] _singletons;
 
     public override void StartUp()
     {
-        foreach (var behaviour in _behaviours)
+        foreach (var behaviour in _singletons)
         {
             behaviour.StartUp();
         }
@@ -15,7 +15,7 @@ public class Initializer : SingletonBehaviour<Initializer>
 
     public override void ShutDown()
     {
-        foreach (var behaviour in _behaviours.Reverse())
+        foreach (var behaviour in _singletons.Reverse())
         {
             behaviour.ShutDown();
         }

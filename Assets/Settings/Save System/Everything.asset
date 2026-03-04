@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5169760e9d952274e99b4947273ddaa5, type: 3}
+  m_Name: Everything
+  m_EditorClassIdentifier: Assembly-CSharp::SaveDataAsset
+  _value:
+    name: Nae
+    inventory:
+      _serializedList:
+      - Key: {fileID: 11400000, guid: 3e34d0e2685f64a4ab78d115f286956e, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 191cdee5900c2be469ebc1deb9c7c8f1, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: a216d2571a882894d91281b7ff04aca0, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 16a1f44a40375a1498289f9d8e9ad72b, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: dc30c441acffc3f4f98cb2c93ca8b10b, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 3b5fb9c1ed7162e49a9ffc6706effbdc, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 5cb7db82d20f7734d9451469612e18ab, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 3f64c2cc73baea940a05c2052dd976ba, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: be3e584d5e440cf459017f94e74cf6b7, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: ed00ba399b0330849a8755520ec99a4d, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 750d60ab20bc4f942b81b9635435d558, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 596034c6a9943de4b93738262dd9ac04, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: c0d9a96ac2830794e964fcfa1e1a73d3, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 56fcf534fbc0dd84eb2ef9d18be5455f, type: 2}
+        Value: -1

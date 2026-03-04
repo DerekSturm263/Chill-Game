@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using AYellowpaper.SerializedCollections;
+using System;
 
 [Serializable]
 public struct SaveData
 {
-    public List<Asset> _inventory;
+    public string name;
+    public SerializedDictionary<Asset, int> inventory;
 }

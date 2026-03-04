@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f5e07dae3eed054eb56a9167f13fc66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Initializer
-  _behaviours:
-  - {fileID: -3056136389070970184, guid: 23a6a75acf88d254781864e781e7bdc4, type: 3}
+  _singletons:
+  - {fileID: 11400000, guid: 75940d62aa96ec34ea213fb1e1dfd8d0, type: 2}

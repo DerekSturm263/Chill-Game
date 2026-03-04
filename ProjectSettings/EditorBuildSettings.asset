@@ -12,6 +12,7 @@ EditorBuildSettings:
     path: Assets/Game-Specific/Battle Test.unity
     guid: b54ba5ba1b05d9d44ba900754ea32c80
   m_configObjects:
+    com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f, type: 2}
     com.unity.input.settings: {fileID: 11400000, guid: 37afc5426bef0e143a7c5073d958cfe0, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 559990ccb11379a4cb78d056bf9dac68, type: 3}
     com.unity.localization.settings: {fileID: 11400000, guid: 20b085e7b63a2434cb0c5cdcf41c99ad, type: 2}
