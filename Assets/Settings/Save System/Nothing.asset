@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: Nothing
   m_EditorClassIdentifier: Assembly-CSharp::SaveDataAsset
   _value:
-    name: Derek
-    inventory: []
+    username: Derek
+    inventory:
+      _serializedList: []
+    objects: []

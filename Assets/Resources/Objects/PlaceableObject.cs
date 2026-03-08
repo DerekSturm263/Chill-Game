@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Placeable Object", menuName = "Scriptable Objects/Placeable Object")]
 public class PlaceableObject : Asset
@@ -16,13 +17,31 @@ public class PlaceableObject : Asset
     [SerializeField] private Vector3Int _dimensions;
     public Vector3Int Dimensions => _dimensions;
 
-    public override void OnTap()
+    public override void OnTapButton(Button button)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Tap Button");
+
+
     }
 
-    public override void OnHold()
+    public override void OnHoldButton(Button button)
     {
-        throw new System.NotImplementedException();
+        Debug.Log("Hold Button");
+
+        PlaceableObjectInstance.CreateFromItem(this);
+    }
+
+    public override void OnTapObject(GameObject obj)
+    {
+        Debug.Log("Tap Object");
+
+        obj.GetComponent<PlaceableObjectInstance>().DisplayObjectPopup();
+    }
+
+    public override void OnHoldObject(GameObject obj)
+    {
+        Debug.Log("Hold Object");
+
+        obj.GetComponent<PlaceableObjectInstance>().SetIsMoving(true);
     }
 }

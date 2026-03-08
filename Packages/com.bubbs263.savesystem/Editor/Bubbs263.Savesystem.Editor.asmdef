@@ -1,0 +1,10 @@
+{
+    "name": "Bubbs263.Savesystem.Editor",
+    "references": [
+      "Bubbs263.Savesystem"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

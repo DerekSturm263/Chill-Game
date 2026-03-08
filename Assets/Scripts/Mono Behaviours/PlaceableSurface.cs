@@ -8,8 +8,12 @@ public class PlaceableSurface : MonoBehaviour
 
     [SerializeField] private Material _tileMaterial;
     [SerializeField] private Vector3 _offset;
+    public ref Vector3 Offset => ref _offset;
+
     [SerializeField] private Vector3 _orientation;
     [SerializeField] private Vector3 _tileCount;
+    public ref Vector3 TileCount => ref _tileCount;
+
     [SerializeField] private Vector2 _tileScale;
     [SerializeField] private int _layer;
 
@@ -63,7 +67,7 @@ public class PlaceableSurface : MonoBehaviour
                 for (int x = 0; x < _tileCount.x; ++x)
                 {
                     Quaternion rotation = Quaternion.LookRotation(_orientation);
-                    Matrix4x4 position = Matrix4x4.TRS(_offset + new Vector3(x, y, z), rotation, _tileScale);
+                    Matrix4x4 position = Matrix4x4.TRS(transform.position + _offset + new Vector3(x, y, z), rotation, _tileScale);
 
                     Graphics.DrawMesh(_tile, position, _tileMaterial, _layer);
                 }

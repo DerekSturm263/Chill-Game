@@ -1,7 +1,8 @@
 ﻿<Solution>
+  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="AYellowpaper.SerializedCollections.csproj" />
   <Project Path="AYellowpaper.SerializedCollections.Editor.csproj" />
-  <Project Path="Assembly-CSharp.csproj" />
   <Project Path="Assembly-CSharp-firstpass.csproj" />
-  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Bubbs263.Savesystem.Editor.Tests.csproj" />
+  <Project Path="Bubbs263.Savesystem.Tests.csproj" />
 </Solution>

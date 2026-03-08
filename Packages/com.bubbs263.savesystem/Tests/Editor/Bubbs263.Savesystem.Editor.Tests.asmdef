@@ -1,0 +1,14 @@
+{
+    "name": "Bubbs263.Savesystem.Editor.Tests",
+    "references": [
+        "Bubbs263.Savesystem.Editor",
+        "Bubbs263.Savesystem"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

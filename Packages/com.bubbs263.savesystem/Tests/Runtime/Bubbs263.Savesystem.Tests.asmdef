@@ -1,0 +1,11 @@
+{
+    "name": "Bubbs263.Savesystem.Tests",
+    "references": [
+        "Bubbs263.Savesystem"
+    ],
+    "optionalUnityReferences": [
+        "TestAssemblies"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

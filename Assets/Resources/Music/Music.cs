@@ -1,15 +1,28 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Music", menuName = "Scriptable Objects/Music")]
 public class Music : Asset
 {
-    public override void OnTap()
+    [SerializeField] private AudioClip _clip;
+
+    public override void OnTapButton(Button button)
     {
-        throw new System.NotImplementedException();
+
     }
 
-    public override void OnHold()
+    public override void OnHoldButton(Button button)
     {
-        throw new System.NotImplementedException();
+
+    }
+
+    public override void OnTapObject(GameObject obj)
+    {
+
+    }
+
+    public override void OnHoldObject(GameObject obj)
+    {
+
     }
 }
