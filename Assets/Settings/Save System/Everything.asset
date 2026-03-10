@@ -14,77 +14,77 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SaveDataAsset
   _value:
     username: Nae
-    level: 0
-    basic_currency_temp: 0
-    premium_currency_temp: 0
+    level: 6.04
+    basic_currency_temp: 1000
+    premium_currency_temp: 100
     inventory:
       _serializedList:
       - Key: {fileID: 11400000, guid: 3e34d0e2685f64a4ab78d115f286956e, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: 56fcf534fbc0dd84eb2ef9d18be5455f, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: a8441f1caaea7994bb955f8b3071f711, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: c0d9a96ac2830794e964fcfa1e1a73d3, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: 596034c6a9943de4b93738262dd9ac04, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: 3f64c2cc73baea940a05c2052dd976ba, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 191cdee5900c2be469ebc1deb9c7c8f1, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: a216d2571a882894d91281b7ff04aca0, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: 16a1f44a40375a1498289f9d8e9ad72b, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: dc30c441acffc3f4f98cb2c93ca8b10b, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: ed00ba399b0330849a8755520ec99a4d, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 750d60ab20bc4f942b81b9635435d558, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: eb367359a6fa6904192bea8f20a830e9, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: 34d38127c3089e8468e9b03187b0a910, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: b4dcaae2eb6033f408f057c12a0acc87, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: 52f93c4d5c96b5c479e572e5fa48ab1c, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: cada74d0494b7e4408baa6ceed02ac28, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: c98f7c7a31225164fb659910d175f746, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: 96baf9bb8dc48434c87a69c60b7d60aa, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: be3e584d5e440cf459017f94e74cf6b7, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 3b5fb9c1ed7162e49a9ffc6706effbdc, type: 2}
-        Value: -1
+        Value: 99
       - Key: {fileID: 11400000, guid: d9546e2331509d843b0fe7d3502e3bb0, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 47db9a7ae73fcca40bf13f3c54581b6c, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: f52072e374634e643991ec93e6bcb430, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 76390e3f232517a4f97e528d376e0794, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 2c87c311230bdd3489122980a6b90503, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 27b7bc3dd7acf604b860a18773ae6f23, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 4c7ce36e879c7b14da59bb429b7ab7b5, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 768c44d171c74ac4fa9baa8b5a911b99, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 6b9f2cf4f72afb345b2a6ad1bd978e0e, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: 5cb7db82d20f7734d9451469612e18ab, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: b3636e9ee2a4df24eac29c329e1f4640, type: 2}
-        Value: 0
+        Value: 99
       - Key: {fileID: 11400000, guid: b3d85d04b58c1d34d8d1d60176a989dc, type: 2}
-        Value: 0
+        Value: 99
     roomDimensions: {x: 10, y: 5, z: 10}
     objects:
     - obj: {fileID: 11400000, guid: dc30c441acffc3f4f98cb2c93ca8b10b, type: 2}

@@ -15,6 +15,15 @@ public class SerializedMethods : MonoBehaviour
                     ++SaveMethods.Current.inventory[asset];
                     SaveMethods.Current.basic_currency_temp -= asset.Price;
                 }
+            },
+            new()
+            {
+                label = "Cancel",
+                enabled = true,
+                onClick = () =>
+                {
+                    PopupMethods.Hide();
+                }
             }
         };
 

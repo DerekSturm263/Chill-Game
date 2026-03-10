@@ -68,16 +68,15 @@ public class PopupSystem : ScriptableObject
 
     private void Startup()
     {
-
         Application.quitting += () =>
         {
 
         };
     }
 
-    internal void Display(string title, string description, Sprite image, ButtonInfo[] buttons)
+    internal GameObject Display(string title, string description, Sprite image, ButtonInfo[] buttons)
     {
-        GameObject popupInstance = Instantiate(_popup);
+        GameObject popupInstance = Instantiate(_popup, FindFirstObjectByType<Canvas>().transform);
         popupInstance.name = $"{title} Popup";
 
         popupInstance.FindChildByTag("Title")?.GetComponent<TMPro.TMP_Text>()?.SetText(title);
@@ -99,5 +98,7 @@ public class PopupSystem : ScriptableObject
                 buttonInstance.onClick.AddListener(button.onClick.Invoke);
             }
         }
+
+        return popupInstance;
     }
 }

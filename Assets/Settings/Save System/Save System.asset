@@ -15,7 +15,7 @@ MonoBehaviour:
   _key: 5db2e0e9603bb474eb1d918329abe6f7
   _variableScript: {fileID: 11500000, guid: 086f66da5e8fe0b49b801bbaf1fb7668, type: 3}
   _saveDataFolder: Save Data
-  _default: {fileID: 11400000, guid: c4ceaedd8f2833a4baff4c1a7c1cf845, type: 2}
+  _default: {fileID: 11400000, guid: c93a18a73ec675e49ad58f031f3d09bc, type: 2}
   _autoLoadOnStart: 1
   _autoSaveOnQuit: 0
   _current:

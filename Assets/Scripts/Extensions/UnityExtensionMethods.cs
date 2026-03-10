@@ -9,7 +9,7 @@ public static class UnityExtensionMethods
 
     public static GameObject FindChildByTag(this GameObject gameObject, string tag)
     {
-        foreach (Transform child in gameObject.transform)
+        foreach (var child in gameObject.GetComponentsInChildren<Transform>())
         {
             if (child.CompareTag(tag))
                 return child.gameObject;
