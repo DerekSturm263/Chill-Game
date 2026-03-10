@@ -17,7 +17,7 @@ MonoBehaviour:
   _saveDataFolder: Save Data
   _default: {fileID: 11400000, guid: c4ceaedd8f2833a4baff4c1a7c1cf845, type: 2}
   _autoLoadOnStart: 1
-  _autoSaveOnQuit: 1
+  _autoSaveOnQuit: 0
   _current:
     username: 
     level: 0

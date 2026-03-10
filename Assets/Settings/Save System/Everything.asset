@@ -21,6 +21,8 @@ MonoBehaviour:
       _serializedList:
       - Key: {fileID: 11400000, guid: 3e34d0e2685f64a4ab78d115f286956e, type: 2}
         Value: -1
+      - Key: {fileID: 11400000, guid: 56fcf534fbc0dd84eb2ef9d18be5455f, type: 2}
+        Value: -1
       - Key: {fileID: 11400000, guid: a8441f1caaea7994bb955f8b3071f711, type: 2}
         Value: -1
       - Key: {fileID: 11400000, guid: c0d9a96ac2830794e964fcfa1e1a73d3, type: 2}
@@ -60,6 +62,18 @@ MonoBehaviour:
       - Key: {fileID: 11400000, guid: 3b5fb9c1ed7162e49a9ffc6706effbdc, type: 2}
         Value: -1
       - Key: {fileID: 11400000, guid: d9546e2331509d843b0fe7d3502e3bb0, type: 2}
+        Value: 0
+      - Key: {fileID: 11400000, guid: 47db9a7ae73fcca40bf13f3c54581b6c, type: 2}
+        Value: 0
+      - Key: {fileID: 11400000, guid: f52072e374634e643991ec93e6bcb430, type: 2}
+        Value: 0
+      - Key: {fileID: 11400000, guid: 76390e3f232517a4f97e528d376e0794, type: 2}
+        Value: 0
+      - Key: {fileID: 11400000, guid: 2c87c311230bdd3489122980a6b90503, type: 2}
+        Value: 0
+      - Key: {fileID: 11400000, guid: 27b7bc3dd7acf604b860a18773ae6f23, type: 2}
+        Value: 0
+      - Key: {fileID: 11400000, guid: 4c7ce36e879c7b14da59bb429b7ab7b5, type: 2}
         Value: 0
       - Key: {fileID: 11400000, guid: 768c44d171c74ac4fa9baa8b5a911b99, type: 2}
         Value: 0

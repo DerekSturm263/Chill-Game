@@ -7,17 +7,20 @@ using UnityEngine.UI;
 public struct ButtonInfo
 {
     public string label;
+    public bool enabled;
     public Action onClick;
 }
 
 public struct UnityButtonInfo
 {
     public string label;
+    public bool enabled;
     public UnityEvent onClick;
 
     public static implicit operator ButtonInfo(UnityButtonInfo src) => new()
     {
         label = src.label,
+        enabled = src.enabled,
         onClick = src.onClick.Invoke
     };
 }
@@ -91,8 +94,9 @@ public class PopupSystem : ScriptableObject
             {
                 Button buttonInstance = Instantiate(_button, buttonsParent.transform);
 
-                buttonInstance.onClick.AddListener(button.onClick.Invoke);
                 buttonInstance.GetComponentInChildren<TMPro.TMP_Text>().SetText(button.label);
+                buttonInstance.interactable = button.enabled;
+                buttonInstance.onClick.AddListener(button.onClick.Invoke);
             }
         }
     }

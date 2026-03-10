@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b10c3437dfa57b408237938b266563c, type: 3}
   m_Name: Popup System
   m_EditorClassIdentifier: Assembly-CSharp::PopupSystem
-  _popup: {fileID: 0}
-  _button: {fileID: 0}
+  _popup: {fileID: 3528431447395869869, guid: 6e4d1f7bee2dc7d429a5cf6f18e8d2e3, type: 3}
+  _button: {fileID: 5513021326527025279, guid: bacf443e32456cb48b9fbe15e8ed1a7b, type: 3}

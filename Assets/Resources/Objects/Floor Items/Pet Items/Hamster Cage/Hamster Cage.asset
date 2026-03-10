@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fa643bf40600044c9e090b5122bd40c, type: 3}
   m_Name: Hamster Cage
   m_EditorClassIdentifier: Assembly-CSharp::PlaceableObject
-  _icon: {fileID: 0}
+  _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   _price: 0
   _description: 
   _object: {fileID: 0}
