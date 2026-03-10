@@ -11,11 +11,7 @@ public class PlaceableObjectInstance : MonoBehaviour
 
     public static PlaceableObjectInstance CreateFromItem(PlaceableObject item)
     {
-        GameObject newItem = new()
-        {
-            name = item.name
-        };
-
+        GameObject newItem = new(item.name, typeof(PlaceableObjectInstance));
         PlaceableObjectInstance component = newItem.GetComponent<PlaceableObjectInstance>();
 
         component._item = item;
@@ -52,6 +48,6 @@ public class PlaceableObjectInstance : MonoBehaviour
 
     public void DisplayObjectPopup()
     {
-
+        PopupMethods.Display(_item.name, _item.Description, _item.Icon, _item.Buttons);
     }
 }

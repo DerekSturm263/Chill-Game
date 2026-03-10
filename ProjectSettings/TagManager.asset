@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Icon
   - Label
+  - Title
+  - Description
+  - Image
+  - Buttons
   layers:
   - Default
   - TransparentFX

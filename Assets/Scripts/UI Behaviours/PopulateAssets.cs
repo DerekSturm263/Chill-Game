@@ -32,6 +32,7 @@ public class PopulateAssets : MonoBehaviour
             Destroy(child.gameObject);
     }
 
+    [ContextMenu("Load")]
     public void Load()
     {
         Asset[] items = Resources.LoadAll<Asset>(_resourcePath)
@@ -53,8 +54,6 @@ public class PopulateAssets : MonoBehaviour
             button.transform.SetParent(transform);
             button.onClick.AddListener(() => _onTap.Invoke(item));
             button.onHold.AddListener(() => _onHold.Invoke(item));
-            button.onClick.AddListener(() => item.OnTapButton(button));
-            button.onHold.AddListener(() => item.OnHoldButton(button));
         }
     }
 

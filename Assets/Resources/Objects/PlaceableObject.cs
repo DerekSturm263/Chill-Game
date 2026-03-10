@@ -17,19 +17,8 @@ public class PlaceableObject : Asset
     [SerializeField] private Vector3Int _dimensions;
     public Vector3Int Dimensions => _dimensions;
 
-    public override void OnTapButton(Button button)
-    {
-        Debug.Log("Tap Button");
-
-
-    }
-
-    public override void OnHoldButton(Button button)
-    {
-        Debug.Log("Hold Button");
-
-        PlaceableObjectInstance.CreateFromItem(this);
-    }
+    [SerializeField] private UnityButtonInfo[] _buttons;
+    public UnityButtonInfo[] Buttons => _buttons;
 
     public override void OnTapObject(GameObject obj)
     {

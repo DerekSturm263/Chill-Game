@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Popup", menuName = "Popup System/Popup")]
 public class Popup : ScriptableObject
@@ -13,10 +12,6 @@ public class Popup : ScriptableObject
     [SerializeField] private Sprite _image;
     public Sprite Image => _image;
 
-    [SerializeField] private UnityButtonInfo[] _buttons;
-    public ButtonInfo[] Buttons => _buttons.Select(item => new ButtonInfo()
-    {
-        label = item.label,
-        onClick = () => item.onClick.Invoke()
-    }).ToArray();
+    [SerializeField] private ButtonInfo[] _buttons;
+    public ButtonInfo[] Buttons => _buttons;
 }

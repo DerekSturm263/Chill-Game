@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 
 /// <summary>
 /// System for creating and manipulating popups.
@@ -15,6 +16,18 @@ public static class PopupMethods
     public static void Display(string title, string description, Sprite image, ButtonInfo[] buttons)
     {
         PopupSystem.Instance.Display(title, description, image, buttons);
+    }
+
+    /// <summary>
+    /// Spawns a poup with the given title, description, image, and buttons.
+    /// </summary>
+    /// <param name="title"></param>
+    /// <param name="description"></param>
+    /// <param name="image"></param>
+    /// <param name="buttons"></param>
+    public static void Display(string title, string description, Sprite image, UnityButtonInfo[] buttons)
+    {
+        PopupSystem.Instance.Display(title, description, image, buttons.Cast<ButtonInfo>().ToArray());
     }
 
     /// <summary>

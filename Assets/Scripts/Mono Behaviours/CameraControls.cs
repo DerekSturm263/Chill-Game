@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
 
@@ -23,6 +24,9 @@ public class CameraControls : MonoBehaviour
     {
         var touches = UnityEngine.InputSystem.EnhancedTouch.Touch.activeTouches;
         if (touches.Count == 0)
+            return;
+
+        if (!touches.All(touch => Physics.Raycast(Camera.main.ScreenPointToRay(touch.screenPosition))))
             return;
 
         if (touches.Count == 1)

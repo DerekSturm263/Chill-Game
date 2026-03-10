@@ -14,6 +14,12 @@ public struct UnityButtonInfo
 {
     public string label;
     public UnityEvent onClick;
+
+    public static implicit operator ButtonInfo(UnityButtonInfo src) => new()
+    {
+        label = src.label,
+        onClick = src.onClick.Invoke
+    };
 }
 
 public class PopupSystem : ScriptableObject

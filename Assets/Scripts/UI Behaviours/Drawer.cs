@@ -16,8 +16,12 @@ public class Drawer : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
     [SerializeField] private float _closedPadding;
     [SerializeField] private float _openPadding;
     [SerializeField] private bool _isOpen;
-    
-    public void SetIsOpen(bool isOpen) => _isOpen = isOpen;
+
+    public void SetIsOpen(bool isOpen)
+    {
+        _isOpen = isOpen;
+        _isLerping = true;
+    }
 
     private bool _isLerping;
     private float _blendValue;

@@ -1,14 +1,32 @@
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
-public class HoldableButton : Button, IPointerClickHandler, IPointerUpHandler
+public class HoldableButton : Button, IPointerDownHandler, IPointerUpHandler
 {
     public float holdTime = 3f;
     public UnityEvent onHold;
 
-    private float _originalTime;
+    private bool _isHolding;
+    private float _holdTime;
+
+    private void Update()
+    {
+        if (_isHolding)
+        {
+            _holdTime += Time.deltaTime;
+
+            if (_holdTime > holdTime)
+            {
+                LongPress();
+
+                _holdTime = 0;
+                _isHolding = false;
+            }
+        }
+    }
 
     private void LongPress()
     {
@@ -19,12 +37,13 @@ public class HoldableButton : Button, IPointerClickHandler, IPointerUpHandler
         onHold.Invoke();
     }
 
-    public new virtual void OnPointerClick(PointerEventData eventData)
+    public new virtual void OnPointerDown(PointerEventData eventData)
     {
         if (eventData.button != PointerEventData.InputButton.Left)
             return;
 
-        _originalTime = Time.time;
+        _holdTime = 0;
+        _isHolding = true;
     }
 
     public new virtual void OnPointerUp(PointerEventData eventData)
@@ -32,7 +51,7 @@ public class HoldableButton : Button, IPointerClickHandler, IPointerUpHandler
         if (eventData.button != PointerEventData.InputButton.Left)
             return;
 
-        if (Time.time - _originalTime >= holdTime)
-            LongPress();
+        _holdTime = 0;
+        _isHolding = false;
     }
 }

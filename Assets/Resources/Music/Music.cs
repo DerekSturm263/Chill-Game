@@ -6,16 +6,6 @@ public class Music : Asset
 {
     [SerializeField] private AudioClip _clip;
 
-    public override void OnTapButton(Button button)
-    {
-
-    }
-
-    public override void OnHoldButton(Button button)
-    {
-
-    }
-
     public override void OnTapObject(GameObject obj)
     {
 

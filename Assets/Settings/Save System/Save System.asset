@@ -20,7 +20,8 @@ MonoBehaviour:
   _autoSaveOnQuit: 1
   _current:
     username: 
-    currency_temp: 0
+    level: 0
+    basic_currency_temp: 0
     premium_currency_temp: 0
     inventory:
       _serializedList: []
