@@ -2,6 +2,17 @@
 
 public class SerializedMethods : MonoBehaviour
 {
+    public void SpawnPlaceableObject(Asset asset)
+    {
+        PlaceableObject obj = asset as PlaceableObject;
+
+        GameObject newItem = Instantiate(obj.Object);
+        newItem.name = obj.name;
+        PlaceableObjectInstance component = newItem.GetComponent<PlaceableObjectInstance>();
+
+        component.SetObject(obj);
+    }
+
     public void PopupShopAsset(Asset asset)
     {
         ButtonInfo[] buttons = new ButtonInfo[]

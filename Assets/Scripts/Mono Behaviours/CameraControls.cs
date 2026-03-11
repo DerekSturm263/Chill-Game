@@ -26,7 +26,7 @@ public class CameraControls : MonoBehaviour
         if (touches.Count == 0)
             return;
 
-        if (!touches.All(touch => Physics.Raycast(Camera.main.ScreenPointToRay(touch.screenPosition))))
+        if (touches.Any(touch => !Physics.Raycast(Camera.main.ScreenPointToRay(touch.screenPosition))))
             return;
 
         if (touches.Count == 1)
@@ -36,7 +36,7 @@ public class CameraControls : MonoBehaviour
         else
         {
             //Orbit();
-            Zoom(Vector2.Distance(touches[0].delta, touches[1].delta));
+            Zoom(Vector2.Distance(touches[0].screenPosition, touches[1].screenPosition));
         }
     }
 

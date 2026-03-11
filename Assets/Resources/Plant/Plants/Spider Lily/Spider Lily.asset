@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Spider Lily
   m_EditorClassIdentifier: Assembly-CSharp::Plant
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _price: 0
+  _price: 300
   _description: 
   _object: {fileID: 0}

@@ -85,5 +85,5 @@ MonoBehaviour:
         Value: -1
       - Key: {fileID: 11400000, guid: b3d85d04b58c1d34d8d1d60176a989dc, type: 2}
         Value: -1
-    roomDimensions: {x: 0, y: 0, z: 0}
+    roomDimensions: {x: 10, y: 5, z: 10}
     objects: []

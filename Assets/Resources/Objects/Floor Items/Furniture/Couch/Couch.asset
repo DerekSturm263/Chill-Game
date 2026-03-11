@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Couch
   m_EditorClassIdentifier: Assembly-CSharp::PlaceableObject
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _price: 0
+  _price: 1000
   _description: 
   _object: {fileID: 0}
   _type: 0

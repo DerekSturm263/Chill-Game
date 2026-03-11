@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Dog
   m_EditorClassIdentifier: Assembly-CSharp::Animal
   _icon: {fileID: 0}
-  _price: 0
+  _price: 2000
   _description: 
   _object: {fileID: 0}

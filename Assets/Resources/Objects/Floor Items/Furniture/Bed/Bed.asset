@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fa643bf40600044c9e090b5122bd40c, type: 3}
   m_Name: Bed
   m_EditorClassIdentifier: Assembly-CSharp::PlaceableObject
-  _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  _price: 0
+  _icon: {fileID: 21300000, guid: 6cd18a43591d97c4888191afe6bafc71, type: 3}
+  _price: 1000
   _description: 
-  _object: {fileID: 0}
+  _object: {fileID: 4505056627549109958, guid: 8948d13370a05ae4f89ac60de4944ce7, type: 3}
   _type: 0
-  _dimensions: {x: 0, y: 0, z: 0}
+  _dimensions: {x: 2, y: 1, z: 4}
