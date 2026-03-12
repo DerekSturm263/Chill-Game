@@ -50,10 +50,19 @@ public class PopulateAssets : MonoBehaviour
                 icon.sprite = item.Icon;
 
             button.gameObject.FindChildByTag("Label")?.GetComponent<TMPro.TMP_Text>()?.SetText(item.name);
+            button.gameObject.FindChildByTag("Count")?.GetComponent<TMPro.TMP_Text>()?.SetText($"x{item.Count}");
 
             button.transform.SetParent(transform);
             button.onClick.AddListener(() => _onTap.Invoke(item));
             button.onHold.AddListener(() => _onHold.Invoke(item));
+
+            if (!item.IsUnlocked)
+            {
+                button.interactable = false;
+
+                if (icon)
+                    icon.color = Color.black;
+            }
         }
     }
 

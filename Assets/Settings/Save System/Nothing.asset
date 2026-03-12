@@ -13,10 +13,9 @@ MonoBehaviour:
   m_Name: Nothing
   m_EditorClassIdentifier: Assembly-CSharp::SaveDataAsset
   _value:
-    username: Derek
     level: 50
-    basic_currency_temp: 1000
-    premium_currency_temp: 10
+    basicCurrency: 10000
+    premiumCurrency: 500
     inventory:
       _serializedList:
       - Key: {fileID: 11400000, guid: 3e34d0e2685f64a4ab78d115f286956e, type: 2}
@@ -81,9 +80,76 @@ MonoBehaviour:
         Value: -1
       - Key: {fileID: 11400000, guid: 5cb7db82d20f7734d9451469612e18ab, type: 2}
         Value: -1
+      - Key: {fileID: 11400000, guid: b4d3224b5ae214e4fbf32306ac0de106, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 49c13afec5b4a28418e510833486473f, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: b453af4d6cb624a42b2ffb3081b946ac, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 68092ce3681f2324d8bea93031b4f811, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: d68d748feb00cda4ba053c9e98b0b08d, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 2579bca5806b15e42a20c9a51f63fb8a, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: ed1e8bec97bc49541af07c57fadd1382, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: ffd8c11166d6507428c02247815e4a01, type: 2}
+        Value: -1
       - Key: {fileID: 11400000, guid: b3636e9ee2a4df24eac29c329e1f4640, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 48b2b1a365c6b6c4aa6c75d453242b8e, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: d2a68f9bedf03794f8b272be8bfa189d, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 89401480636f74642a038c35707177bc, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 2d98d16ead4e4264ab1ec4f22b98fb51, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: fa659f164d81534428987ea0da6f760b, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: b0b95d956cb25304a98010b3f02013e3, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 4423032081a187f4fb715197fa1fd73a, type: 2}
         Value: -1
       - Key: {fileID: 11400000, guid: b3d85d04b58c1d34d8d1d60176a989dc, type: 2}
         Value: -1
-    roomDimensions: {x: 10, y: 5, z: 10}
-    objects: []
+      - Key: {fileID: 11400000, guid: 2250948e32db8934b8530b80aacb0d5c, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 630b9d8ab07a059419b46c9fa3d62a22, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: bc0f50e1fb367ae4393c58dd8c9fc2a6, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 81fb201109b09a344bd5e3c57688464f, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: cddda82b77497894982690ce9c52633a, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: b6c53faeabebd9e458192aea0693378f, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: ac08738a6af92b34992204c3e6663aa2, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 5a292fd5213a57a47a0a799115ce356e, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 0938f58397f653342ab985125aa9a4fd, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 0c2dd5635da71cc41986737e09a885c8, type: 2}
+        Value: -1
+      - Key: {fileID: 11400000, guid: 89003b14a56db274cabbd33771aaaac7, type: 2}
+        Value: -1
+    familyData:
+      yourName: Derek
+      partnersName: Nae
+      pets:
+      - pet: {fileID: 11400000, guid: cada74d0494b7e4408baa6ceed02ac28, type: 2}
+        name: Coco
+      - pet: {fileID: 11400000, guid: 52f93c4d5c96b5c479e572e5fa48ab1c, type: 2}
+        name: Grayson
+      - pet: {fileID: 11400000, guid: cada74d0494b7e4408baa6ceed02ac28, type: 2}
+        name: Clarkie
+      - pet: {fileID: 11400000, guid: cada74d0494b7e4408baa6ceed02ac28, type: 2}
+        name: Cindy
+    roomData:
+      roomDimensions: {x: 8, y: 5, z: 8}
+      wallpaperColor: {r: 0.4584905, g: 0.5760438, b: 1, a: 1}
+      wallpaper: {fileID: 11400000, guid: 2579bca5806b15e42a20c9a51f63fb8a, type: 2}
+      objects: []

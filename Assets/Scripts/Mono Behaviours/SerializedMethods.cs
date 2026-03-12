@@ -20,11 +20,16 @@ public class SerializedMethods : MonoBehaviour
             new()
             {
                 label = "Purchase",
-                enabled = SaveMethods.Current.basic_currency_temp >= asset.Price,
+                enabled = SaveMethods.Current.basicCurrency >= asset.Price,
                 onClick = () =>
                 {
+                    if (SaveMethods.Current.inventory[asset] == -1)
+                        ++SaveMethods.Current.inventory[asset];
+
                     ++SaveMethods.Current.inventory[asset];
-                    SaveMethods.Current.basic_currency_temp -= asset.Price;
+                    SaveMethods.Current.basicCurrency -= asset.Price;
+
+                    PopupMethods.Hide();
                 }
             },
             new()

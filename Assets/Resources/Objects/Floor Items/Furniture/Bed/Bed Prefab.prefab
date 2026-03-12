@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3554974404515325522}
   - component: {fileID: 996366743973795809}
   - component: {fileID: 7523452148780348918}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bed Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,6 +105,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlaceableObjectInstance
   _holdTime: 0.5
+  _layer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!65 &7523452148780348918
 BoxCollider:
   m_ObjectHideFlags: 0

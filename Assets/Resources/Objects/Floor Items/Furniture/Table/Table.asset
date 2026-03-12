@@ -15,6 +15,6 @@ MonoBehaviour:
   _icon: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   _price: 800
   _description: 
-  _object: {fileID: 0}
+  _object: {fileID: 4505056627549109958, guid: 3c8ede32304bb7145bae4bd09e5527ad, type: 3}
   _type: 0
-  _dimensions: {x: 0, y: 0, z: 0}
+  _dimensions: {x: 4, y: 1, z: 4}

@@ -19,11 +19,17 @@ MonoBehaviour:
   _autoLoadOnStart: 1
   _autoSaveOnQuit: 0
   _current:
-    username: 
     level: 0
-    basic_currency_temp: 0
-    premium_currency_temp: 0
+    basicCurrency: 0
+    premiumCurrency: 0
     inventory:
       _serializedList: []
-    roomDimensions: {x: 0, y: 0, z: 0}
-    objects: []
+    familyData:
+      yourName: 
+      partnersName: 
+      pets: []
+    roomData:
+      roomDimensions: {x: 0, y: 0, z: 0}
+      wallpaperColor: {r: 0, g: 0, b: 0, a: 0}
+      wallpaper: {fileID: 0}
+      objects: []

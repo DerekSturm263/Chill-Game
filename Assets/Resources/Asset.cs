@@ -19,7 +19,4 @@ public abstract class Asset : ScriptableObject
 
     public bool IsUnlocked => SaveMethods.Current.inventory[this] >= 0;
     public uint Count => (uint)Math.Clamp(SaveMethods.Current.inventory[this], uint.MinValue, uint.MaxValue);
-
-    public abstract void OnTapObject(GameObject obj);
-    public abstract void OnHoldObject(GameObject obj);
 }
